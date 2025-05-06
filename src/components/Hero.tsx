@@ -106,16 +106,25 @@ const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="lg:col-span-4 flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-text-primary/20 rounded-full blur-3xl" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-text-primary/20 shadow-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-accent-primary/20 rounded-full blur-3xl" />
+              <div 
+                className="relative rounded-full border-4 border-accent-primary/20 shadow-2xl overflow-hidden"
+                style={{ width: '25rem', height: '25rem' }}
+              >
                 <img 
-                  src="./gray.png"
+                  src="src/data/gray.png"
                   alt={personalInfo.name}
-                  className="w-full h-full object-cover"
+                  className="absolute w-full h-full object-cover object-center"
+                  style={{ 
+                    objectPosition: "center center", 
+                    transform: "translate(-55%, -50%)",
+                    top: "50%",
+                    left: "50%" 
+                  }}
                 />
               </div>
             </div>
@@ -141,7 +150,7 @@ const Hero: React.FC = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="text-text-primary group-hover:text-text-secondary transition-colors duration-300"
+            className="text-accent-primary group-hover:text-accent-neon transition-colors duration-300"
           >
             <ChevronDown size={24} />
           </motion.div>
