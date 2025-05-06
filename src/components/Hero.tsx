@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-text-primary/20 rounded-full blur-3xl" />
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-text-primary/20 shadow-2xl overflow-hidden">
                 <img 
-                  src="/src/data/gray.png"
+                  src="./gray.png"
                   alt={personalInfo.name}
                   className="w-full h-full object-cover"
                 />
