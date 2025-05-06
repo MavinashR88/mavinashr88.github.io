@@ -7,7 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/portfolio-/',
+  base: '/',
   build: {
     outDir: 'docs', // Add this line to specify output directory
     assetsDir: 'assets',
