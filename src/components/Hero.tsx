@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../data';
 import TypewriterText from './TypewriterText';
+import grayImage from '../data/gray.png';
 
 const Hero: React.FC = () => {
   const titles = [
@@ -116,7 +117,7 @@ const Hero: React.FC = () => {
                 style={{ width: '25rem', height: '25rem' }}
               >
                 <img 
-                  src="src/components/gray.png"
+                  src={personalInfo.photo}
                   alt={personalInfo.name}
                   className="absolute w-full h-full object-cover object-center"
                   style={{ 
