@@ -13,7 +13,7 @@ export const personalInfo = {
   name: 'Manne Avinash Reddy',
   title: 'Data Scientist | Machine Learning Engineer',
   description: 'Data science professional passionate about transforming complex data into actionable business insights. Specializing in statistical modeling, machine learning, and data visualization.',
-  photo: 'src/data/gray.png',
+  photo: '/gray.png',
   email: 'manneavinashreddy2@gmail.com',
   location: 'Kansas, United States',
   socials: {

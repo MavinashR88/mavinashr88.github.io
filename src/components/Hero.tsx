@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
                 style={{ width: '25rem', height: '25rem' }}
               >
                 <img 
-                  src="src/components/gray.png"
+                  src="src/data/gray.png"
                   alt={personalInfo.name}
                   className="absolute w-full h-full object-cover object-center"
                   style={{ 
