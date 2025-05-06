@@ -7,7 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './',
+  base: '/portfolio-/', // Change from './' to '/portfolio-/'
   build: {
     assetsDir: 'assets',
     rollupOptions: {
