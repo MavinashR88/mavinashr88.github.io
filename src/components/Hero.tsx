@@ -110,21 +110,12 @@ const Hero: React.FC = () => {
             className="lg:col-span-4 flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-accent-primary/20 rounded-full blur-3xl" />
-              <div 
-                className="relative rounded-full border-4 border-accent-primary/20 shadow-2xl overflow-hidden"
-                style={{ width: '25rem', height: '25rem' }}
-              >
+              <div className="absolute inset-0 bg-text-primary/20 rounded-full blur-3xl" />
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-text-primary/20 shadow-2xl overflow-hidden">
                 <img 
-                  src="src/data/gray.png"
+                  src="/src/data/gray.png"
                   alt={personalInfo.name}
-                  className="absolute w-full h-full object-cover object-center"
-                  style={{ 
-                    objectPosition: "center center", 
-                    transform: "translate(-55%, -50%)",
-                    top: "50%",
-                    left: "50%" 
-                  }}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -150,7 +141,7 @@ const Hero: React.FC = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="text-accent-primary group-hover:text-accent-neon transition-colors duration-300"
+            className="text-text-primary group-hover:text-text-secondary transition-colors duration-300"
           >
             <ChevronDown size={24} />
           </motion.div>
