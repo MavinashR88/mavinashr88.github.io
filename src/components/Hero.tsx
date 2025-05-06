@@ -117,8 +117,7 @@ const Hero: React.FC = () => {
                 style={{ width: '25rem', height: '25rem' }}
               >
                 <img 
-                  src={personalInfo.photo}
-                  alt={personalInfo.name}
+                  src={grayImage}
                   className="absolute w-full h-full object-cover object-center"
                   style={{ 
                     objectPosition: "center center", 
