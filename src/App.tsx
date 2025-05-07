@@ -7,11 +7,12 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Blog from './components/Blog';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   useEffect(() => {
-    document.title = 'Portfolio | Your Name';
+    document.title = 'Avinash Reddy Manne | Data Scientist';
   }, []);
 
   return (
@@ -23,6 +24,7 @@ function App() {
           <About />
           <Experience />
           <Projects />
+          <Blog />
           <Skills />
           <Contact />
         </main>
