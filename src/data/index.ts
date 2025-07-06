@@ -7,17 +7,17 @@ export const navItems: NavItem[] = [
   { label: 'Projects', href: 'projects' },
   { label: 'Blog', href: 'blog' },
   { label: 'Skills', href: 'skills' },
+  { label: 'Certifications', href: 'certifications' },
   { label: 'Contact', href: 'contact' },
 ];
 
 export const personalInfo = {
   name: 'Manne Avinash Reddy',
-  title: 'AI/ML Engineer | Generative AI & MLOps Specialist',
-  description:
-    'AI/ML and data science professional with 3+ years of experience designing and deploying scalable machine learning systems, Generative AI applications, and analytics tools across industries.',
-  photo: '/gray.png',
+  title: 'AI/ML Engineer | Generative AI | MLOps | LLM Fine-Tuning',
+  description: 'AI/ML professional with 3+ years of experience building production-ready GenAI systems, deploying LLMs, and developing data-driven solutions with modern MLOps and cloud-native tooling.',
+  photo: '/profile.jpg',
   email: 'manneds.dev@gmail.com',
-  location: 'Kansas City, MO, USA',
+  location: 'Kansas, United States',
   socials: {
     github: 'https://github.com/MavinashR88',
     linkedin: 'https://linkedin.com/in/manneavinashreddy',
@@ -26,17 +26,24 @@ export const personalInfo = {
 };
 
 export const aboutInfo = {
-  bio: `AI/ML Engineer with a strong foundation in deep learning, LLMs, and MLOps. I specialize in designing end-to-end AI systems that drive real-world impact. Currently working at CBRE where I build GenAI-powered tools and scalable ML pipelines. My background includes developing solutions in healthcare, enterprise search, and customer analytics, with a focus on using OpenAI, LangChain, TensorFlow, and MLflow.`,
+  bio: `AI/ML Engineer with 3+ years of experience building scalable machine learning and Generative AI solutions in enterprise and healthcare domains.
+
+At CBRE, I led the development of a GenAI-powered document summarization system using OpenAI, LangChain, and FAISS, reducing hallucinations by 30% and enabling real-time semantic search. I built robust MLOps pipelines using ZenML and MLflow, deployed FastAPI microservices on AWS, and tracked performance with Power BI dashboards.
+
+Previously at TechCiti, I developed NLP models using LSTM and Word2Vec for mental health diagnostics (92% recall), containerized APIs, and built stakeholder-ready dashboards in Tableau and Power BI.
+
+I bring strong experience with Python, LangChain, Hugging Face, FastAPI, AWS, Docker, and modern GenAI pipelines. Currently open to full-time AI/ML engineering roles (OPT, STEM eligible).`,
   education: [
     {
-      degree: "Master of Science in Computer Science (Data Science Specialization)",
-      institution: "University of Central Missouri",
-      year: "2023 - 2025 (Expected)",
-      description: "Focused on advanced machine learning, deep learning, and big data analytics. Currently maintaining a 4.0 GPA.",
+      degree: 'Master of Science in Computer Science',
+      institution: 'University of Central Missouri',
+      year: '2023 - 2025 (Expected)',
+      description: 'Focus on machine learning, deep learning, big data analytics, and distributed systems. Currently maintaining a strong academic record.',
       courses: [
-        "Advanced Machine Learning",
-        "Deep Learning & Neural Networks",
-        "Big Data Analytics"
+        'Advanced Machine Learning',
+        'Deep Learning & Neural Networks',
+        'Big Data Analytics',
+        'Statistical Computing'
       ]
     }
   ],
@@ -45,102 +52,101 @@ export const aboutInfo = {
 export const workExperiences: WorkExperience[] = [
   {
     id: 1,
-    company: "CBRE",
-    position: "AI/ML Engineer",
-    duration: "Jan 2024 – Present",
+    company: 'CBRE',
+    position: 'AI/ML Engineer',
+    duration: 'Jan 2024 - Present',
     description: [
-      "Designed and deployed GenAI-powered document summarization and Q&A pipelines using OpenAI, LangChain, and FAISS to improve enterprise search workflows.",
-      "Engineered RAG pipelines and optimized prompts to reduce hallucination by 30% and improve contextual response quality.",
-      "Built MLOps pipelines with ZenML and MLflow for CI/CD, monitoring, and reproducible experimentation.",
-      "Fine-tuned LLMs using custom scoring metrics and evaluation frameworks for domain-specific applications.",
-      "Developed Flask and FastAPI REST APIs, containerized with Docker and deployed on AWS Lambda and EC2.",
-      "Conducted A/B testing and hyperparameter tuning to increase precision by 15% in critical NLP tasks.",
-      "Designed Power BI dashboards for executive insights on model adoption, performance, and usage metrics."
+      'Built a GenAI-powered Q&A and summarization system using LangChain, OpenAI, and FAISS to improve enterprise search workflows.',
+      'Reduced hallucination rate by 30% through prompt engineering and transformer-based optimization.',
+      'Designed MLOps pipelines with ZenML and MLflow to streamline CI/CD and experiment tracking.',
+      'Developed and deployed FastAPI microservices to AWS (Lambda, EC2) for scalable model access.',
+      'Created executive Power BI dashboards for LLM usage analytics, adoption, and KPIs.',
     ],
   },
   {
     id: 2,
-    company: "TechCiti Technologies Pvt Ltd",
-    position: "Machine Learning Engineer",
-    duration: "Oct 2021 – Apr 2023",
+    company: 'TechCiti Technologies Private Limited',
+    position: 'Machine Learning Engineer',
+    duration: 'Oct 2021 - Apr 2023',
     description: [
-      "Developed MLP and LSTM models in TensorFlow to classify mental health disorders, achieving 87% accuracy and 92% recall.",
-      "Applied Word2Vec and sequential modeling to analyze symptom progression in clinical data.",
-      "Preprocessed and integrated large-scale clinical datasets using Pandas and NumPy with strict HIPAA-compliance.",
-      "Created dashboards in Tableau, Power BI, and Matplotlib to present findings to non-technical stakeholders.",
-      "Built Dockerized Flask APIs for scalable model access in clinical and research use cases.",
-      "Collaborated in Agile teams, versioned with Git, and maintained documentation for reproducibility and scalability.",
-      "Ensured HIPAA-compliant workflows through secure data governance and regular audits."
-    ]
+      'Engineered LSTM models to identify Bipolar I disorder with 92% recall, improving diagnostic capabilities.',
+      'Preprocessed large clinical datasets, implemented Word2Vec embeddings, and applied NLP for symptom pattern analysis.',
+      'Developed containerized Flask APIs for secure model access in research and clinical tools.',
+      'Built visual analytics dashboards using Tableau and Power BI to share insights with healthcare stakeholders.',
+      'Adhered to HIPAA compliance via data governance and anonymization best practices.'
+    ],
   }
 ];
 
 export const projects: ProjectItem[] = [
   {
     id: 1,
-    title: 'Customer Churn Prediction & Retention Dashboard',
-    description: 'Developed an ML-based system to predict customer attrition with 85% accuracy, enabling proactive retention strategies and stakeholder-friendly visual dashboards.',
+    title: 'GenAI Knowledge Base Q&A System',
+    description: 'Developed a production-ready RAG pipeline using LangChain, OpenAI, and FAISS for document Q&A across enterprise systems.',
     preview: {
       type: 'image',
-      url: 'https://images.pexels.com/photos/7947541/pexels-photo-7947541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      url: 'https://images.pexels.com/photos/7947541/pexels-photo-7947541.jpeg'
     },
-    technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Tableau', 'Azure'],
+    technologies: ['LangChain', 'OpenAI', 'FAISS', 'ZenML', 'FastAPI', 'AWS'],
     demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/example',
+    codeUrl: 'https://github.com/MavinashR88/genai-docqa',
   },
   {
     id: 2,
-    title: 'AI-Powered Resume Screening System',
-    description: 'Built an NLP-based tool using BERT and Streamlit to automate resume screening and improve candidate-job matching efficiency with 90% accuracy.',
+    title: 'Mental Health Disorder Classification',
+    description: 'Built deep learning models using TensorFlow and NLP for mental health diagnosis, achieving 92% recall for Bipolar I.',
     preview: {
       type: 'image',
-      url: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      url: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg'
     },
-    technologies: ['Python', 'BERT', 'PyTorch', 'Streamlit', 'Flask'],
+    technologies: ['TensorFlow', 'LSTM', 'NLP', 'Word2Vec', 'Power BI', 'Flask'],
     demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/example',
+    codeUrl: 'https://github.com/MavinashR88/mental-health-ai',
   }
 ];
 
 export const skills: Skill[] = [
-  // Data & Analytics
-  { name: 'SQL', level: 85, category: 'data' },
-  { name: 'Tableau', level: 90, category: 'data' },
+  { name: 'Python', level: 90, category: 'ml' },
+  { name: 'SQL', level: 85, category: 'ml' },
+  { name: 'Git', level: 85, category: 'dev' },
+  { name: 'Bash', level: 75, category: 'dev' },
+  { name: 'Docker', level: 80, category: 'dev' },
+  { name: 'Linux', level: 80, category: 'dev' },
+  { name: 'HTML/CSS', level: 75, category: 'dev' },
+  { name: 'React', level: 70, category: 'dev' },
+  { name: 'Scikit-learn', level: 85, category: 'ml' },
+  { name: 'TensorFlow', level: 85, category: 'ml' },
+  { name: 'PyTorch', level: 80, category: 'ml' },
+  { name: 'XGBoost', level: 75, category: 'ml' },
+  { name: 'LSTM', level: 85, category: 'ml' },
+  { name: 'CNN', level: 80, category: 'ml' },
+  { name: 'BERT', level: 80, category: 'ml' },
+  { name: 'OpenAI', level: 85, category: 'ml' },
+  { name: 'LangChain', level: 85, category: 'ml' },
+  { name: 'Hugging Face', level: 80, category: 'ml' },
+  { name: 'Prompt Engineering', level: 80, category: 'ml' },
+  { name: 'RAG', level: 80, category: 'ml' },
+  { name: 'FAISS', level: 80, category: 'ml' },
+  { name: 'Streamlit', level: 85, category: 'dev' },
+  { name: 'LangGraph', level: 70, category: 'ml' },
+  { name: 'ADK', level: 70, category: 'ml' },
+  { name: 'Agentic AI', level: 70, category: 'ml' },
+  { name: 'MLflow', level: 75, category: 'dev' },
+  { name: 'ZenML', level: 75, category: 'dev' },
+  { name: 'Flask', level: 80, category: 'dev' },
+  { name: 'FastAPI', level: 85, category: 'dev' },
+  { name: 'AWS (Lambda, EC2, S3)', level: 85, category: 'dev' },
+  { name: 'CI/CD', level: 75, category: 'dev' },
   { name: 'Power BI', level: 85, category: 'data' },
+  { name: 'Tableau', level: 90, category: 'data' },
   { name: 'Matplotlib', level: 80, category: 'data' },
   { name: 'Seaborn', level: 80, category: 'data' },
   { name: 'Excel', level: 75, category: 'data' },
-
-  // ML & AI
-  { name: 'Python', level: 90, category: 'ml' },
-  { name: 'TensorFlow', level: 85, category: 'ml' },
-  { name: 'PyTorch', level: 80, category: 'ml' },
-  { name: 'Scikit-learn', level: 85, category: 'ml' },
-  { name: 'XGBoost', level: 75, category: 'ml' },
-  { name: 'LSTM', level: 80, category: 'ml' },
-  { name: 'CNN', level: 80, category: 'ml' },
-  { name: 'BERT', level: 80, category: 'ml' },
-  { name: 'NLP', level: 85, category: 'ml' },
-  { name: 'LangChain', level: 85, category: 'ml' },
-  { name: 'OpenAI', level: 85, category: 'ml' },
-  { name: 'FAISS', level: 75, category: 'ml' },
-  { name: 'Streamlit', level: 85, category: 'ml' },
-  { name: 'LangGraph', level: 70, category: 'ml' },
-  { name: 'Agentic AI', level: 70, category: 'ml' },
-
-  // MLOps & Deployment
-  { name: 'MLflow', level: 85, category: 'dev' },
-  { name: 'ZenML', level: 80, category: 'dev' },
-  { name: 'Flask', level: 85, category: 'dev' },
-  { name: 'FastAPI', level: 85, category: 'dev' },
-  { name: 'Docker', level: 80, category: 'dev' },
-  { name: 'AWS (Lambda, EC2)', level: 75, category: 'dev' },
-  { name: 'CI/CD', level: 75, category: 'dev' },
-
-  // Development
-  { name: 'Git', level: 85, category: 'dev' },
-  { name: 'Linux', level: 80, category: 'dev' },
-  { name: 'React', level: 70, category: 'dev' },
-  { name: 'HTML/CSS', level: 75, category: 'dev' },
-  { name: 'Bash', level: 70, category: 'dev' }
+  { name: 'KPI Monitoring', level: 75, category: 'data' },
+  { name: 'Data Cleaning', level: 85, category: 'data' },
+  { name: 'Data Wrangling', level: 85, category: 'data' },
+  { name: 'Data Profiling', level: 80, category: 'data' },
+  { name: 'Apache Spark', level: 70, category: 'ml' },
+  { name: 'Feature Engineering', level: 85, category: 'ml' },
+  { name: 'Data Preprocessing', level: 90, category: 'ml' }
 ];
